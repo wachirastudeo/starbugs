@@ -29,10 +29,11 @@
         font-size: 14px;
         color: $dark-grey;
         @extend .ci-text;
-        line-height: 1.5;
+        line-height: 1.6;
         text-align: center;
         @media #{$md} {
-            font-size: 12px;
+
+            font-size: 13px;
             text-align: left;
 
         }
