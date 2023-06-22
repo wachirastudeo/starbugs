@@ -1,0 +1,236 @@
+.sitmap {
+    background-color: rgba($light-grey, $alpha: 0.24);
+    padding: 25px 0;
+
+    border-top: 1px solid $light-grey;
+
+    @media #{$xl} {
+        padding: 50px 0;
+    }
+
+    h4 {
+        font-weight: bold;
+        font-size: 20px;
+        margin: 0 0 8px;
+
+        @media #{$md} {
+            margin: 0 0 16px;
+            font-size: 12px;
+
+        }
+
+        @media #{$lg} {
+            font-size: 14px;
+        }
+
+    }
+
+    p {
+        font-size: 14px;
+        color: $dark-grey;
+        @extend .ci-text;
+        line-height: 1.5;
+        text-align: center;
+        @media #{$md} {
+            font-size: 12px;
+            text-align: left;
+
+        }
+
+        @media #{$lg} {
+            font-size: 14px;
+
+        }
+
+        @media #{$xl} {
+            font-size: 16px;
+        }
+    }
+
+    .sitemap-link {
+        padding: 0;
+        // margin: 0;
+        margin: 0 0 30px;
+
+        @media #{$md} {
+            margin: 0;
+
+        }
+
+        list-style: none;
+
+        li {
+
+            font-size: 16px;
+
+            color: $dark-grey;
+            margin-bottom: 8px;
+
+            @media #{$md} {
+                font-size: 14px;
+
+            }
+
+            @media #{$xl} {
+                font-size: 16px;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            a {
+                @extend .ci-text;
+                color: $dark-grey;
+                text-decoration: none;
+
+                &:hover {
+                    color: $black;
+                }
+            }
+
+        }
+    }
+
+    .footer-social-link {
+        padding: 0;
+        // margin-bottom: 16px;
+        margin-bottom: 8px;
+
+        list-style: none;
+        text-align: center;
+
+        @media #{$md} {
+            text-align: left;
+        }
+        @media #{$xl} {
+            margin-bottom: 16px;
+        }
+
+        li {
+            display: inline-block;
+            // margin-right: 12px;
+            margin-right: 4px;
+
+            @media #{$xl} {
+                margin-right: 12px;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            img {
+                // width: 48px;
+                // height: 48px;
+                width: 40px;
+                height: 40px;
+                display: block;
+
+                @media #{$md} {
+                    width: 30px;
+                    height: 30px;
+                }
+
+                @media #{$xl} {
+                    width: 48px;
+                    height: 48px;
+                }
+            }
+
+        }
+
+
+    }
+}
+
+.copyright {
+    background-color: $copyright-bg-color;
+    // padding: 30px 0;
+    padding: 15px 0;
+
+    @media #{$xl} {
+        padding: 30px 0;
+
+    }
+
+    .copyright-link {
+
+        padding: 0;
+        list-style: none;
+
+        text-align: center;
+        margin: 0 0 8px;
+
+        @media #{$md} {
+            margin: 0;
+            text-align: left;
+        }
+
+        li {
+            display: inline-block;
+            // margin-right: 30px;
+            margin-right: 12px;
+
+            @media #{$xl} {
+                margin-right: 30px;
+
+
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            a {
+                // font-size: 16px;
+                font-size: 14px;
+
+                @media #{$md} {
+                    font-size: 12px;
+                }
+
+                @media #{$xl} {
+                    font-size: 16px;
+
+                }
+
+                @extend .ci-text;
+                color: $copyright-font-color;
+                text-decoration: none;
+
+                &:hover {
+                    color: $light-grey;
+                }
+
+            }
+
+        }
+    }
+
+    .copyright-text {
+
+        text-align: center;
+
+        // font-size: 16px;
+        font-size: 12px;
+
+        @media #{$xl} {
+            font-size: 16px;
+
+        }
+
+        @extend .ci-text;
+        color: $copyright-font-color;
+        margin: 0;
+
+        @media #{$md} {
+            line-height: 2;
+            text-align: right;
+        }
+
+        @media #{$xl} {
+            line-height: 1.5;
+        }
+    }
+}

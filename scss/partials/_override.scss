@@ -1,0 +1,55 @@
+.btn-primary{
+    background-color: $green;
+    border-color: $green;
+    padding: 10px 48px;
+    &:hover,
+    &:focus,
+    &:active{
+        background-color:darken( $green,10 ) ;
+        border-color: $green;
+    }
+}
+
+// .slick-prev{
+//     left: -50px;
+//     z-index: 2;
+//    width: auto;
+//    height: auto;    
+//     &:before{
+//         font-size: 30px;
+//         color:$green;
+//     }
+// }
+// .slick-next{
+//     right: -50px;
+//     z-index: 2;
+//    width: auto;
+//    height: auto;    
+//     &:before{
+//         font-size: 30px;
+//         color:$green;
+//     }
+// }
+
+.slick-dots{
+    bottom: 10px;
+    li{
+        &.slick-active{
+            button{
+                &:before{
+                    color: $white;
+    
+                }
+            }
+        }
+        button{
+            padding: 0;
+            &:before{
+                font-size: 18px;
+                color: $white;
+
+            }
+
+        }
+    }
+}

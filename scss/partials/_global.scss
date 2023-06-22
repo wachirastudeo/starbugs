@@ -1,0 +1,39 @@
+.page-content{
+    max-width: 962px;
+    margin: auto;
+     h3{
+         font-size: 24px;
+         margin: 0 0 40px;
+         font-weight: bold;
+         text-align: center;
+     }
+     p{
+         font-size: 20px;
+         margin: 0 0 24px;
+         line-height: 1.5;
+     }
+     ul{
+         padding-left: 40px;
+         font-size: 20px;
+         margin: 0 0 24px;
+         li{
+             margin: 0 0 8px;
+             &:last-child{
+                 margin: 0;
+             }
+         }
+     }
+ }
+ .slider-block{
+    overflow: hidden;
+    img{
+        max-width: 100%;
+        margin: 0 auto;
+    }
+ }
+
+ body{
+    &.lock{
+        overflow-y: hidden;
+    }
+ }

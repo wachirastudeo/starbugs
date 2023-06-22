@@ -1,0 +1,78 @@
+.main-promotion-banner{
+    margin: 50px auto 40px;
+    img{
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+}
+
+.main-promtion-share{
+    margin: 48px auto 64px;
+    p{
+        font-size: 20px;
+        margin: 0 0 16px;
+        text-align: center;
+
+    }
+    .sharing-list{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        li{
+            display: inline-block;
+            margin: 0 8px 0 0;
+            &:last-child{
+                margin-right: 0;
+
+            }
+            img{
+                width: 40px;
+                height: 40px;
+                display: block;
+                border-radius: 50em;
+            }
+        }
+    }
+}
+.main-promotion-relate{
+    
+.related-item{
+    margin: 0 0 80px;
+
+    a{
+        display: block;
+        margin: 0 0 20px;
+       
+        
+       
+    }
+
+    h4{
+    text-align: center;
+    margin: 0 0 8px;
+        a{
+            
+        font-size: 18px;
+        text-decoration: none;
+        color: $dark-grey;
+        margin: 0;
+        }
+    }
+    p{
+        text-align: center;
+        margin: 0;
+    }
+
+    img{
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+}
+    
+}
