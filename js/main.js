@@ -11,6 +11,14 @@ jQuery('.slider-block').slick({
   dots: true
 });
 
+jQuery('.mobile-slider-block').slick({
+  infinite: true,
+  autoplay: false,
+  speed: 300,
+  slidesToShow: 1,
+  dots: true
+});
+
 jQuery('.menu-slider').slick({
   infinite: true,
  autoplay:false,

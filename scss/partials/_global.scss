@@ -24,11 +24,25 @@
          }
      }
  }
- .slider-block{
+ .slider-block,
+ .mobile-slider-block{
     overflow: hidden;
     img{
         max-width: 100%;
-        margin: 0 auto;
+        display: block;
+        height: auto;
+    }
+ }
+ .slider-block{
+    display: none;
+    @media #{$md}{
+        display: block;
+    }
+ }
+ .mobile-slider-block{
+    display: block;
+    @media #{$md}{
+        display: none;
     }
  }
 
