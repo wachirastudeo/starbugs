@@ -9,13 +9,13 @@
 		<h3>ENJOY SUMMER FLAVORS</h3>
 		<div class="row">
 			<!-- feature left -->
-			<div class="col-6">
+			<div class="col-md-6">
 				<a href="" class="large-image">
 					<img src="<?php echo get_template_directory_uri() ?>/img/large.jpg" alt="">
 				</a>
 			</div>
 			<!-- feature rigth -->
-			<div class="col-6">
+			<div class="col-md-6">
 				<div class="row">
 					<!-- small feature -->
 					<div class="col-6">

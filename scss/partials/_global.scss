@@ -41,6 +41,10 @@
  }
  .mobile-slider-block{
     display: block;
+    &.slick-dotted.slick-slider{
+        margin: 0;
+
+    }
     @media #{$md}{
         display: none;
     }

@@ -1,9 +1,13 @@
 .feature-block{
-    padding: 60px 0;
+    // padding: 60px 0;
+    padding: 30px 0;
+    
     h3{
         font-weight: bold;
-        font-size: 40px;
-        margin-bottom: 25px;
+        // font-size: 40px;
+        font-size: 24px;
+        margin-bottom: 15px;
+        // margin-bottom: 25px;
 
     }
     img{
@@ -17,7 +21,11 @@
        
         &.large-image, 
         &.small-image {
-            margin-bottom: 20px;
+             margin-bottom: 15px;
+             @media #{$md}{
+            margin-bottom: 30px;
+
+             }
         }
     }
 
