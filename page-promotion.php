@@ -46,7 +46,7 @@
 
         <section class="main-promotion-relate">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-md-4">
                     <div class="related-item">
                         <a href="">
                             <img src="<?php echo get_template_directory_uri() ?>/img/promotion-banner1.jpg" alt="">
@@ -56,7 +56,7 @@
                         <p>12/07/2021</p>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-md-4">
                     <div class="related-item">
                         <a href="">
                             <img src="<?php echo get_template_directory_uri() ?>/img/promotion-banner2.jpg" alt="">
@@ -66,7 +66,7 @@
                         <p>12/07/2021</p>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-md-4">
                     <div class="related-item">
 
                         <a href="">
