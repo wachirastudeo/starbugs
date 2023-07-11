@@ -17,7 +17,7 @@
         <div class="container">
             <div class="row">
                 <!-- sidebar -->
-                <div class="col-lg-3">
+                <div class="col-lg-4 col-xl-3">
 
                     <div class="sidebar-wrapper">
                         <div class="sidebar-item">
@@ -32,7 +32,7 @@
 
                     </div>
                 </div>
-                <div class="col-lg-9">
+                <div class="col-lg-8 col-xl-9">
                     <!-- menu items -->
                     <div class="menu-content-wrapper">
                         <!-- drink -->
