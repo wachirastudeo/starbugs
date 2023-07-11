@@ -26,8 +26,21 @@ jQuery('.menu-slider').slick({
   dots: false,
   arrows:true,
   prevArrow:'<a class="menu-prev" href="javascript:voice(0)"></a>',
-  nextArrow:'<a class="menu-next"  href="javascript:voice(0)"></a>'
- 
+  nextArrow:'<a class="menu-next"  href="javascript:voice(0)"></a>',
+  responsive:[
+    {
+      breakpoint:992,
+      settings:{
+        slidesToShow:2
+      }
+    },
+    {
+      breakpoint:576,
+      settings:{
+        slidesToShow:1
+      }
+    }
+  ]
 
 });
 
