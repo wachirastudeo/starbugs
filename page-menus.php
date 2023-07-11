@@ -1,8 +1,9 @@
 <?php get_header(); ?>
 <div class="menu-wrapper">
-    <section class="slider-block">
-        <img src="<?php echo get_template_directory_uri() ?>/img/header-menu-1.jpg" alt="">
-    </section>
+  
+    <!-- slider -->
+    <?php get_template_part('views/slider') ?>
+
     <!-- search box -->
     <section class="menu-searchbox">
         <div class="container">
