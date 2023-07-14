@@ -29,52 +29,8 @@
                 Contact Form
             </h3>
             <p>We will get back to you as soon as possible</p>
-            <form action="" class="form" id="contact_form">
-                <div class="row">
-                    <!-- first name -->
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label for="" class="control-label">
-                                Your name <span>*</span>
-                            </label>
-                            <input type="text" class="form-control">
-                        </div>
-                    </div>
-                    <!-- Email -->
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label for="" class="control-label">
-                                E-mail <span>*</span>
-                            </label>
-                            <input type="text" class="form-control">
-                        </div>
-                    </div>
-                    <!-- phone number -->
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label for="" class="control-label">
-                                Phone number <span>&nbsp;</span>
-                            </label>
-                            <input type="text" class="form-control">
-                        </div>
-                    </div>
-                    <!-- message -->
-                    <div class="col-lg-12">
-                        <div class="form-group">
-                            <label for="" class="control-label">
-                                Message <span>*</span>
-                            </label>
-                            <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
-                        </div>
-                    </div>
-                    <!-- button -->
-                    <div class="col-lg-12">
-                        <div class="form-group">
-                            <button class="btn btn-primary" type="button"> Submit</button>
-                        </div>
-                    </div>
-                </div>
-            </form>
+            <?php echo do_shortcode('[contact-form-7 id="56" title="Contact us form"]') ?>
+            
         </div>
 
     </section>
