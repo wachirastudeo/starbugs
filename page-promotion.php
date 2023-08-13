@@ -5,20 +5,16 @@
 <div class="promotion-wrapper">
     <div class="container">
         <section class="main-promotion-banner">
-            <img src="<?php echo get_template_directory_uri() ?>/img/main-promotion.jpg" alt="">
+            <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(),'full' ) ?>" alt="">
         </section>
         <section class="main-promotion-content">
            <article class="page-content">
-           <h3>Summer Jelly Bag Set</h3>
-            <p>User experience hypotheses series A financing supply chain pivot mass market leverage conversion prototype. Business-to-consumer startup niche market long tail iteration agile development direct mailing. Handshake A/B testing termsheet marketing pivot business model canvas. Twitter virality low hanging fruit MVP founders.
-            <ul>
-                <li>Marketing graphical user interface stock interaction design
-                </li>
-                <li>Low hanging fruit A/B testing gen-z branding business plan burn rate termsheet business-to-business bootstrapping.
-                </li>
-                <li>Advisor hackathon burn rate accelerator venture incubator.</p>
-                </li>
-            </ul>
+          <?php if(have_posts( )):?>
+            <?php while(have_posts()):the_post();?>
+            <?php  the_content();?>
+            <?php endwhile; ?>
+            <?php endif; ?>
+
            </article>
         </section>
         <!-- share -->
