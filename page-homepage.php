@@ -10,6 +10,7 @@
 		<div class="row">
 			<!-- feature left -->
 			<div class="col-md-6">
+
 				<a href="" class="large-image">
 					<img src="<?php echo get_template_directory_uri() ?>/img/large.jpg" alt="">
 				</a>
@@ -17,8 +18,18 @@
 			<!-- feature rigth -->
 			<div class="col-md-6">
 				<div class="row">
+					<?php if(have_posts()): ?>
+						<?php while(have_posts(  )):the_post(  ); ?>
+							<?php   the_title(); ?>
+							<img src="<?php echo get_the_post_thumbnail_url(get_the_id(),'product' ); ?>" alt="" />
+							
+
+							<?php  endwhile ?>
+							<?php  endif ?>
+
+
 					<!-- small feature -->
-					<div class="col-6">
+					<!-- <div class="col-6">
 						<a href="" class="small-image with-margin">
 							<img src="<?php echo get_template_directory_uri() ?>/img/small1.jpg" alt="">
 						</a>
@@ -37,7 +48,7 @@
 						<a href="" class="small-image">
 							<img src="<?php echo get_template_directory_uri() ?>/img/small4.jpg" alt="">
 						</a>
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</div>
