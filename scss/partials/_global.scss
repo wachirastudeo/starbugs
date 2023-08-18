@@ -1,10 +1,25 @@
 .page-content {
     max-width: 962px;
     margin: auto;
-    h1{
-        font-size: 32px;
+
+    h1 {
+        font-size: 24px;
+        margin: 32px 0 20px;
+
         font-weight: bold;
-        margin: 100px 0 32px;
+
+        @media #{$md} {
+            margin: 24px 0 20px;
+        }
+        @media #{$lg} {
+            font-size: 32px;
+
+            margin: 60px 0 32px;
+        }
+
+        @media #{$xl} {
+            margin: 100px 0 32px;
+        }
     }
 
     h3 {
@@ -15,12 +30,12 @@
         text-align: center;
 
         @media #{$md} {
-            //  margin: 0 0 40px;
             font-size: 24px;
 
         }
 
         @media #{$lg} {
+
             margin: 0 0 40px;
 
         }

@@ -11,13 +11,13 @@
 
         <section class="single-content-block">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-md-4 col-lg-6">
                     <img src="https://placehold.co/500" alt="cover">
                 </div>
                 <!-- description -->
 
-                <div class="col-lg-6">
-                    <article class="single-main-content page-content">
+                <div class="col-md-7 col-lg-6">
+                    <article class=" single-main-content page-content">
                         <h1>Strawberry Jalapeño Mint Julep</h1>
                         <p>
                             Don't let Derby Day be your only excuse to make these juleps; they're worthy all year. If you're into spicy margs then you'll be able to handle the heat here; the jalapeño-infused simple syrup mellows out once it hits the cool mint and sweet berries. This recipe makes more simple syrup than you need so save it in the fridge for your next cocktail!
@@ -30,7 +30,7 @@
             <h3>Relate posts</h3>
 
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-6 col-md-3">
                     <div class="relate-item">
                         <a href="#" class="relate-image">
                             <img src="https://placehold.co/300" alt="">
@@ -38,7 +38,7 @@
                         <p class="relate-name"><a href="#">Classic MaiTai</a></p>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-6 col-md-3">
                     <div class="relate-item">
                         <a href="#" class="relate-image">
                             <img src="https://placehold.co/300" alt="">
@@ -46,7 +46,7 @@
                         <p class="relate-name"><a href="#">Classic MaiTai</a></p>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-6 col-md-3">
                     <div class="relate-item">
                         <a href="#" class="relate-image">
                             <img src="https://placehold.co/300" alt="">
@@ -54,7 +54,7 @@
                         <p class="relate-name"><a href="#">Classic MaiTai</a></p>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-6 col-md-3">
                     <div class="relate-item">
                         <a href="#" class="relate-image">
                             <img src="https://placehold.co/300" alt="">
