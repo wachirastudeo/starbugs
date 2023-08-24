@@ -32,17 +32,17 @@ $promotions = new WP_Query(array(
             <p>Share to your friends</p>
             <ul class="sharing-list">
                 <li>
-                    <a href="">
+                    <a class="social-facebook" href="javascript:void(0)">
                         <img src="<?php echo get_template_directory_uri() ?>/img/icon-facebook.png" alt="">
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a class="social-line" href="javascript:void(0)">
                         <img src="<?php echo get_template_directory_uri() ?>/img/icon-line.png" alt="">
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a class="social-twitter" href="javascript:void(0)">
                         <img src="<?php echo get_template_directory_uri() ?>/img/icon-twitter.png" alt="">
                     </a>
                 </li>
