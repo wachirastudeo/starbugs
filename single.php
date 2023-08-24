@@ -1,4 +1,11 @@
-<?php get_header(); ?>
+<?php get_header();
+$releated = new WP_Query(array(
+    'category_name' => 'featured',
+    'posts_per_page' => 4,
+    'orderby' => 'rand',
+    'post__not_in' => array(get_the_ID())
+));
+?>
 
 <div class="single-wrapper">
     <div class="container">
@@ -8,63 +15,46 @@
             <li>Article</li>
         </ul>
         <!-- content -->
+        <?php if (have_posts()) : ?>
+            <?php while (have_posts()) : the_post(); ?>
+                <section class="single-content-block">
+                    <div class="row">
+                        <div class="col-md-4 col-lg-6">
+                            <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
+                        </div>
+                        <!-- description -->
 
-        <section class="single-content-block">
-            <div class="row">
-                <div class="col-md-4 col-lg-6">
-                    <img src="https://placehold.co/500" alt="cover">
-                </div>
-                <!-- description -->
+                        <div class="col-md-7 col-lg-6">
+                            <article class=" single-main-content page-content">
+                                <h1><?php the_title(); ?></h1>
+                                <p>
+                                    <?php the_content(); ?>
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+            <?php endwhile; ?>
+        <?php endif; ?>
 
-                <div class="col-md-7 col-lg-6">
-                    <article class=" single-main-content page-content">
-                        <h1>Strawberry Jalapeño Mint Julep</h1>
-                        <p>
-                            Don't let Derby Day be your only excuse to make these juleps; they're worthy all year. If you're into spicy margs then you'll be able to handle the heat here; the jalapeño-infused simple syrup mellows out once it hits the cool mint and sweet berries. This recipe makes more simple syrup than you need so save it in the fridge for your next cocktail!
-                        </p>
-                    </article>
-                </div>
-            </div>
-        </section>
         <section class="single-relate-block">
             <h3>Relate posts</h3>
+            <?php if ($releated->have_posts()) : ?>
+                <div class="row">
+                    <?php while ($releated->have_posts()) : $releated->the_post(); ?>
 
-            <div class="row">
-                <div class="col-6 col-md-3">
-                    <div class="relate-item">
-                        <a href="#" class="relate-image">
-                            <img src="https://placehold.co/300" alt="">
-                        </a>
-                        <p class="relate-name"><a href="#">Classic MaiTai</a></p>
-                    </div>
+                        <div class="col-6 col-md-3">
+                            <div class="relate-item">
+                                <a href="<?php the_permalink(); ?>" class="relate-image">
+                                    <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'product'); ?>" alt="">
+                                </a>
+                                <p class="relate-name"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
+                            </div>
+                        </div>
+                    <?php endwhile; ?>
                 </div>
-                <div class="col-6 col-md-3">
-                    <div class="relate-item">
-                        <a href="#" class="relate-image">
-                            <img src="https://placehold.co/300" alt="">
-                        </a>
-                        <p class="relate-name"><a href="#">Classic MaiTai</a></p>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="relate-item">
-                        <a href="#" class="relate-image">
-                            <img src="https://placehold.co/300" alt="">
-                        </a>
-                        <p class="relate-name"><a href="#">Classic MaiTai</a></p>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="relate-item">
-                        <a href="#" class="relate-image">
-                            <img src="https://placehold.co/300" alt="">
-                        </a>
-                        <p class="relate-name"><a href="#">Classic MaiTai</a></p>
-                    </div>
-                </div>
+            <?php endif; ?>
 
-
-            </div>
         </section>
     </div>
 </div>
