@@ -85,6 +85,13 @@ jQuery(document).on('click','.social-line',function(){
 
 })
 
+jQuery('.sidebar-wrapper').stickySidebar({
+  topSpacing: 49,
+  bottomSpacing: 48,
+  minWidth: 1000,
+
+});
+
 
 
 

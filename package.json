@@ -37,6 +37,7 @@
   "dependencies": {
     "@types/jquery": "^3.5.16",
     "bootstrap": "^5.3.0",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "sticky-sidebar": "^3.3.1"
   }
 }

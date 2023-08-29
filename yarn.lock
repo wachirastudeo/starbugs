@@ -6875,6 +6875,11 @@ static-extend@^0.1.1:
     define-property "^0.2.5"
     object-copy "^0.1.0"
 
+sticky-sidebar@^3.3.1:
+  version "3.3.1"
+  resolved "https://registry.npmjs.org/sticky-sidebar/-/sticky-sidebar-3.3.1.tgz"
+  integrity sha512-9ljX5GP9B1sov0kzGmQeQL5CdearSGH5y9cy3wE3wiGiLtgo577EekE8tNgnqr5ys/d++2+MlCCf4ICbNoaJ3A==
+
 stream-combiner2@^1.1.1:
   version "1.1.1"
   resolved "https://registry.npmjs.org/stream-combiner2/-/stream-combiner2-1.1.1.tgz"

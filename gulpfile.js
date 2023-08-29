@@ -106,7 +106,9 @@ const vendorScripts = () =>
     .src(
       [
         './js/vendor/modernizr-3.6.0.min.js',
-        './node_modules/slick-carousel/slick/slick.js'
+        './node_modules/slick-carousel/slick/slick.js',
+        './node_modules/sticky-sidebar/dist/jquery.sticky-sidebar.js',
+
         // './node_modules/bootstrap/dist/js/bootstrap.min.js',
       ],
       { allowEmpty: true }
