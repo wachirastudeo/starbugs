@@ -17,79 +17,31 @@
 
                 <div class="menu-list">
 
-
-                    <div class="menu-item">
-                        <img class="menu-image" src="<?php echo get_template_directory_uri() ?>/img/drink-1.jpg" alt="">
-                        <p class="menu-name">ลาเต้ วิปปิ้งพอร์ตโต้</p>
-                        <p class="menu-description">วิปครีมสูตรพิเศษผสมกลิ่นมาร์ชแมลโลว์ด้านล่าง ราดด้วยซอสมอคค่า สลับชั้นด้วยกาแฟปั่น ท็อปด้วยวิปครีมมาร์ชแมลโลว์และมาร์ชแมลโลว์เต็มคำ</p>
+                <?php if(have_posts()): ?>
+                <?php  while(have_posts()): the_post(); ?>
+                <div class="menu-item">
+                        <img class="menu-image" src="<?php echo get_the_post_thumbnail_url() ?> " alt="">
+                        <p class="menu-name"><?php the_title(); ?></p>
+                        <p class="menu-description"><?php the_content(); ?></p></p>
                         <div class="menu-action">
                             <div class="row">
                                 <!-- stock -->
                                 <div class="col-6">
-                                    <p class="menu-stock">In Stock</p>
+                                    <p class="menu-stock"><?php the_field('stock_status'); ?></p>
                                 </div>
                                 <!-- price -->
                                 <div class="col-6">
-                                    <p class="menu-price">80 บาท</p>
+                                    <p class="menu-price"><?php the_field('price'); ?> บาท</p>
                                 </div>
 
                             </div>
                         </div>
                     </div>
-                    <div class="menu-item">
-                        <img class="menu-image" src="<?php echo get_template_directory_uri() ?>/img/drink-2.jpg" alt="">
-                        <p class="menu-name">ลาเต้ วิปปิ้งพอร์ตโต้</p>
-                        <p class="menu-description">วิปครีมสูตรพิเศษผสมกลิ่นมาร์ชแมลโลว์ด้านล่าง ราดด้วยซอสมอคค่า สลับชั้นด้วยกาแฟปั่น ท็อปด้วยวิปครีมมาร์ชแมลโลว์และมาร์ชแมลโลว์เต็มคำ</p>
-                        <div class="menu-action">
-                            <div class="row">
-                                <!-- stock -->
-                                <div class="col-6">
-                                    <p class="menu-stock">In Stock</p>
-                                </div>
-                                <!-- price -->
-                                <div class="col-6">
-                                    <p class="menu-price">80 บาท</p>
-                                </div>
+                <?php endwhile;?>
+                <?php endif; ?>
 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-                        <img class="menu-image" src="<?php echo get_template_directory_uri() ?>/img/drink-3.jpg" alt="">
-                        <p class="menu-name">ลาเต้ วิปปิ้งพอร์ตโต้</p>
-                        <p class="menu-description">วิปครีมสูตรพิเศษผสมกลิ่นมาร์ชแมลโลว์ด้านล่าง ราดด้วยซอสมอคค่า สลับชั้นด้วยกาแฟปั่น ท็อปด้วยวิปครีมมาร์ชแมลโลว์และมาร์ชแมลโลว์เต็มคำ</p>
-                        <div class="menu-action">
-                            <div class="row">
-                                <!-- stock -->
-                                <div class="col-6">
-                                    <p class="menu-stock">In Stock</p>
-                                </div>
-                                <!-- price -->
-                                <div class="col-6">
-                                    <p class="menu-price">80 บาท</p>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-                        <img class="menu-image" src="<?php echo get_template_directory_uri() ?>/img/drink-3.jpg" alt="">
-                        <p class="menu-name">ลาเต้ วิปปิ้งพอร์ตโต้</p>
-                        <p class="menu-description">วิปครีมสูตรพิเศษผสมกลิ่นมาร์ชแมลโลว์ด้านล่าง ราดด้วยซอสมอคค่า สลับชั้นด้วยกาแฟปั่น ท็อปด้วยวิปครีมมาร์ชแมลโลว์และมาร์ชแมลโลว์เต็มคำ</p>
-                        <div class="menu-action">
-                            <div class="row">
-                                <!-- stock -->
-                                <div class="col-6">
-                                    <p class="menu-stock">In Stock</p>
-                                </div>
-                                <!-- price -->
-                                <div class="col-6">
-                                    <p class="menu-price">80 บาท</p>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
+                    
+                   
                 </div>
             </div>
         </div>
