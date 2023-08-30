@@ -1,5 +1,6 @@
 <?php 
 $sliders= explode(',',ot_get_option('sliders'));
+$mobile_sliders= explode(',',ot_get_option('mobile_sliders'));
 
 ?>
 
@@ -20,19 +21,13 @@ $sliders= explode(',',ot_get_option('sliders'));
 </section>
 <!-- mobile slider -->
 <section class="mobile-slider-block">
+<?php foreach($mobile_sliders as $imgs)  {?>
+
 	<div class="slide-item">
-		<img src="<?php echo get_template_directory_uri() ?>/img/mobile-slide1.jpg" alt="">
+	<img src="<?php echo wp_get_attachment_url($imgs)?>" alt="">
 
 	</div>
-	<div class="slide-item">
-		<img src="<?php echo get_template_directory_uri() ?>/img/mobile-slide2.jpg" alt="">
-
-	</div>
-	<div class="slide-item">
-		<img src="<?php echo get_template_directory_uri() ?>/img/mobile-slide3.jpg" alt="">
-
-	</div>
-
-
+	
+	<?php } ?>
 	</div>
 </section>

@@ -77,7 +77,7 @@
     }
 }
 
-.slider-block,
+.slider-block
 .mobile-slider-block {
     overflow: hidden;
 
@@ -94,6 +94,7 @@
     @media #{$md} {
         display: block;
     }
+   
 }
 
 .mobile-slider-block {
