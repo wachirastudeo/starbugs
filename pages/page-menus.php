@@ -1,6 +1,7 @@
-<?php
-/* Template Name: Menus */
 
+<?php /* Template Name: Menus */ ?>
+
+<?php
 $beverages = new WP_Query(array(
     'post_type' => 'product',
     'orderby' => 'date',

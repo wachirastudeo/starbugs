@@ -7,9 +7,7 @@
     "dev": "gulp",
     "vendor": "gulp vendor"
   },
-  "repository": "https://github.com/jir4yu/wp-theme-prototype.git",
-  "author": "Jirayu Limjinda <jir4yu.l@gmail.com>",
-  "license": "MIT",
+  
   "devDependencies": {
     "@babel/core": "^7.14.2",
     "@babel/preset-env": "^7.14.2",

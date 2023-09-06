@@ -1,5 +1,6 @@
+<?php /* Template Name: Promotion */ ?>
+
 <?php
-/* Template Name: Promotion */
 $promotions = new WP_Query(array(
     'category_name' => 'Promotion',
     'posts_per_page' => 3,

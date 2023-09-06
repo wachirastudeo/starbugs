@@ -109,7 +109,7 @@ const vendorScripts = () =>
         './node_modules/slick-carousel/slick/slick.js',
         './node_modules/sticky-sidebar/dist/jquery.sticky-sidebar.js',
 
-        // './node_modules/bootstrap/dist/js/bootstrap.min.js',
+        './node_modules/bootstrap/dist/js/bootstrap.min.js',
       ],
       { allowEmpty: true }
     )

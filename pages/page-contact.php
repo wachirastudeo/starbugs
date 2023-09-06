@@ -1,3 +1,5 @@
+<?php /* Template Name: Contact */ ?>
+
 <?php get_header(); ?>
 
 <div class="contact-wrapper">

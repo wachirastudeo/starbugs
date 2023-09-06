@@ -1,6 +1,6 @@
-<?php
-/* Template Name: Homepage */
+<?php /* Template Name: Homepage */ ?>
 
+<?php
 $top_featured = new WP_Query(array(
 	'category_name' => 'Featured',
 	'posts_per_page' => 1,
